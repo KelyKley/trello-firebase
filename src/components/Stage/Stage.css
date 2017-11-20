@@ -7,6 +7,10 @@
     color: #4c4c4c;
     background: #89609E;
   }
+
+  #comment{
+    width:100%;
+  }
   
   .addCard{
     padding: 0;
@@ -15,6 +19,9 @@
   }
   .soo{
     display: hidden;
+  }
+  h3{
+    padding: auto 1px;
   }
   header {
    text-align: center;
@@ -57,23 +64,36 @@
   
   form {
    margin: 0 auto;
-   width: 80%;
+   /*width: 80%;*/
     display: inline-block;
     overflow: hidden;
     display: -webkit-flex;
     display: grid;
     border-radius: .2em;
   }
+  .addButton{
+    margin-top: 3%;
+  }
+  .add-k{
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+    background: rgba(0, 0, 0, 0.1);
+    color: #414e57;
+    }
   form button {
+    text-align: left;
     padding: 0 1em;
     font-size: 1em;
-    background: #FDE880;
+    background: rgba(222, 225, 227, 0.9);
+    color: gray;
   }
+  
   ul {
     list-style: none;
     padding: 0;
     margin: 2em 0 1em;
-  }
+  }/*
   ul li {
     padding: 1em;
     background: #fff;
@@ -81,7 +101,7 @@
     border: solid 1px rgba(88, 183, 205, .2);
     border-bottom: solid 2px rgba(88, 183, 205, .2);
     position: relative;
-  }
+  }*/
   button {
     cursor: pointer;
   }
@@ -422,7 +442,7 @@
   }
   
   .form-container input[type=text], .form-container input[type=password], .form-container input[type=email],input[type=tel], form-container select{
-  width:calc(100% - 50px);
+  width: 94%;
   float:left;
   border-radius:0px;
   border:0px solid #ddd;

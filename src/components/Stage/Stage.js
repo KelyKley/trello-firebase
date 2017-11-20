@@ -12,7 +12,7 @@ class Stage  extends React.Component{
          return <Task  key = {task.id} title = {task.title}/>
       })
       return  (
-         <div>
+         <div className="container-board">
                <h3> {this.props.title}</h3>
 
                {list}
@@ -22,9 +22,10 @@ class Stage  extends React.Component{
                console.log ('this.taskInputRef.value', this.taskInputReference.value)
                addTask (this.props.title, this.taskInputReference.value);
             }}>
-               <input type="text" ref = {e => this.taskInputReference = e}/>
-               <button type="submit">
-                  save card
+            
+               <input className="add-k" type="text" ref = {e => this.taskInputReference = e}/>
+               <button className="addButton" type="submit">
+                  Add a new card...
                </button>
             </form>
 

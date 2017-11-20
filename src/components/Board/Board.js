@@ -10,9 +10,7 @@ const NavBar = () => {
         <div className="container-fluid">
           <div className="navbar-header">
             <h1 className="navbar-brand navi">
-              <img
-                alt="Brand"
-                src="https://a.trellocdn.com/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png"/>
+              <img  alt="Brand" src="https://a.trellocdn.com/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png"/>
             </h1>
           </div>
         </div>
@@ -40,9 +38,9 @@ const Board = ({stages, tasks}) => {
                e.preventDefault();
                addStage (this.stageInputRef.value);
             }}>
-               <input type="text" ref = {e => this.stageInputRef = e}/>
-               <button type="submit">
-                  LIST
+               <input className="addList" type="text" ref = {e => this.stageInputRef = e} placeholder="Add a new list..."/>
+               <button className="addList" type="submit">
+                  <i className="fa fa-plus" aria-hidden="true"></i>
                </button>
                </form>
             </div>

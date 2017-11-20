@@ -19,6 +19,54 @@
    height: 100%;
  }
 
+.container-board{
+  background: rgba(222, 225, 227, 0.9);
+  border-radius: 3px;
+  padding: 0.75em;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  margin: 1vw;
+}
 
+::placeholder { color: #afa7a7; }
+
+.addList{
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #bdc3c7;
+}
  /******************************************/
  
+ nav.right {
+  float: right;
+}
+nav ul li a.current-user {
+  position: relative;
+  overflow: hidden;
+  padding-left: 35px;
+  margin-right: .5em;
+}
+nav ul li a.current-user .react-gravatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: .5em;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+}
+nav ul li a {
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  padding: .3em .5em;
+  line-height: 1em;
+}

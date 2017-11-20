@@ -9,6 +9,7 @@ const TrelloApp = ({stages, tasks}) => {
    console.log (tasks);
    
    return <div className="App">
+       
        <Board stages={stages}  tasks = {tasks}/>
    </div>
 };

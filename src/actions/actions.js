@@ -14,7 +14,7 @@ import firebase from 'firebase';
   firebase.initializeApp(config);
 
 export function readBoard () {
-   firebase.database().ref('stages').on ('value', res => {
+   firebase.database().ref('cards').on ('value', res => {
       let stages = []
       res.forEach ( snap  => {
          const stage = snap.val();
@@ -45,7 +45,7 @@ export function  addStage (text) {
       stages : stages
    })  */
 
-   firebase.database().ref('stages').push (text);
+   firebase.database().ref('cards').push (text);
 }
 
 export function  addTask (stage, text) {
